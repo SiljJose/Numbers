@@ -28,5 +28,17 @@ public class NumberWordsTests {
 		Assert.assertEquals( "Second Test", "Two", numberWords.convertToWords( "2" ) ) ;
 		
 	}
+	
+	@Test
+	public void ConvertNumber19() {
+		Assert.assertEquals( "Nineteen Test", "Nineteen", numberWords.convertToWords( "19" ) ) ;
+		
+	}
+	
+	@Test
+	public void ConvertNumber563() {
+		Assert.assertEquals( "Five hundred and sixty three Test", "Five Hundred Sixty Three", numberWords.convertToWords( "563" ) ) ;
+		
+	}
 
 }

@@ -14,18 +14,22 @@ public final class NumberWordsApplication {
 	}
 	
 	public void execute() {
-		//while( true ) {
+		while( true ) {
 		String value = "";
 			try {
 				System.out.print( "Enter number (0 to exit): " ) ;
 				value = reader.readLine() ;
 				int number = Integer.parseInt( value ) ;
+				if(number == 0) {
+					return;
+				}
+				String result = numberWords.convertToWords(value);
+				System.out.println(result);
 			} catch ( NumberFormatException | IOException e ) {
 				System.out.println( "Invalid number" ) ;
 			}
-		//}
-		String result = numberWords.convertToWords(value);
-		System.out.println(result);
+		}
+		
 	}
 
 	public static void main(String[] args) {
