@@ -30,7 +30,7 @@ public class NumberWords {
 		} else {
 			numberInWords = SingleDigitInWords(numberAsInt);
 		}
-		return numberInWords;
+		return numberInWords.trim();
 
 	}
 
