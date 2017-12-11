@@ -40,5 +40,11 @@ public class NumberWordsTests {
 		Assert.assertEquals( "Five hundred and sixty three Test", "Five Hundred Sixty Three", numberWords.convertToWords( "563" ) ) ;
 		
 	}
+	
+	@Test
+	public void ConvertNumber989() {
+		Assert.assertEquals( "Five hundred and sixty three Test", "Nine Hundred Eighty Nine", numberWords.convertToWords( "989" ) ) ;
+		
+	}
 
 }
